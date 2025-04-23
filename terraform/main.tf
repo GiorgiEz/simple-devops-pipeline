@@ -39,4 +39,3 @@ resource "null_resource" "start_server" {
 
   depends_on = [null_resource.copy_to_production]
 }
-
