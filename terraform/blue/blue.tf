@@ -23,9 +23,9 @@ resource "null_resource" "install_dependencies_blue" {
 }
 
 # Step 2: Copy app.py to blue directory
-resource "null_resource" "copy_to_blue" {
+resource "null_resource" "copy_everything_to_blue" {
   provisioner "local-exec" {
-    command = "xcopy /E /Y /I ..\\..\\app ..\\..\\production\\blue"
+    command = "xcopy /E /Y /I ..\\..\\app ..\\..\\production\\green"
   }
   triggers = {
     always_run = "${timestamp()}"
