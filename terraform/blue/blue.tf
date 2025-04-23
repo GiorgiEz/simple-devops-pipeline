@@ -37,4 +37,7 @@ resource "null_resource" "start_server_blue" {
   provisioner "local-exec" {
     command = "..\\..\\scripts\\run_server.bat blue 5000"
   }
+  triggers = {
+    always_run = "${timestamp()}"
+  }
 }
