@@ -1,8 +1,9 @@
 from flask import Flask, request, render_template, redirect, url_for
-import os
+import os, sys
 
 
-template_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'templates'))
+project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
+template_dir = os.path.join(project_root, 'templates')
 app = Flask(__name__, template_folder=template_dir)
 
 @app.route('/', methods=['GET', 'POST'])
@@ -18,4 +19,5 @@ def greet(username):
 
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5000)
+    port = int(sys.argv[1]) if len(sys.argv) > 1 else 5000
+    app.run(port=port)
