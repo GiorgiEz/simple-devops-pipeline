@@ -1,0 +1,22 @@
+# Idea
+.idea
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# Logs
+logs
+*.log
+
+# Environment variables
+.env
+
+# OS files
+.DS_Store
+
+# Runtime
+npm-debug.log*
