@@ -7,10 +7,10 @@ A simple local DevOps project that implements **Blue-Green deployment** using **
 
 ## Table of Contents
 
-- [Project Overview](#-project-overview)
-- [Tools & Technologies](#-tools--technologies)
-- [CI/CD Workflow](#️-cicd-workflow)
-- [Infrastructure as Code (IaC)](#️-infrastructure-as-code-iac)
+1. [Project Overview](#project-overview)
+2. [Tools & Technologies](#tools-technologies)
+3. [CI/CD Workflow](#️cicd-workflow)
+4. [Infrastructure as Code (IaC)](#️infrastructure-as-code-iac)
 
 ---
 
