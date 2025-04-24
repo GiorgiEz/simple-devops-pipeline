@@ -21,7 +21,7 @@ def home():
 # Greeting route: displays a personalized message
 @app.route('/greet/<username>')
 def greet(username):
-    return f'<h1>{username}!</h1>'
+    return f'<h1>Hello, {username}!</h1>'
 
 # Run the Flask server on a given port (default 5000)
 if __name__ == '__main__':
