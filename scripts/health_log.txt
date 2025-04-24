@@ -1,2 +1,3 @@
 [Thu 04/24/2025  0:15:26.08] ✅ Server is UP on port 5000 - Status: 200 
 [Thu 04/24/2025  0:15:42.36] ❌ Server is DOWN or returning error on port 5000 - Status: 000 
+[Thu 04/24/2025 15:47:49.20] ❌ Server is DOWN or returning error on port 5000 - Status: 000 
