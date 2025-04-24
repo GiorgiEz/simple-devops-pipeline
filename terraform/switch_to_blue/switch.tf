@@ -8,6 +8,7 @@ terraform {
 
 provider "null" {}
 
+# step 1: stop the green server on port 5000
 resource "null_resource" "stop_green" {
   provisioner "local-exec" {
     command = "..\\..\\scripts\\stop_server.bat green 5000"
@@ -18,6 +19,7 @@ resource "null_resource" "stop_green" {
   }
 }
 
+# step 2: start the blue server on port 5000
 resource "null_resource" "start_blue" {
   provisioner "local-exec" {
     command = "..\\..\\scripts\\run_server.bat blue 5000"
