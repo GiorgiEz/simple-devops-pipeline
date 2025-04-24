@@ -8,9 +8,9 @@ A simple local DevOps project that implements **Blue-Green deployment** using **
 ## Table of Contents
 
 1. [Project Overview](#project-overview)
-2. [Tools & Technologies](#tools-technologies)
-3. [CI/CD Workflow](#️cicd-workflow)
-4. [Infrastructure as Code (IaC)](#️infrastructure-as-code-iac)
+2. [Tools & Technologies](#tools--technologies)
+3. [CI/CD Workflow](#cicd-workflow)
+4. [Infrastructure as Code (IaC)](#infrastructure-as-code-iac)
 5. [Diagram](#diagram)
 
 ---
@@ -65,6 +65,5 @@ Terraform `null_resource` with `local-exec` handles scripting for:
 
 ---
 
-5. **Diagram
+5. **Workflow Diagram
 ![image](https://github.com/user-attachments/assets/4cafe6e8-3fe2-4dfd-a113-3416be70845d)
-
