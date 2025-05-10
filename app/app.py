@@ -8,7 +8,7 @@ template_dir = os.path.join(project_root, 'templates')
 app = Flask(__name__, template_folder=template_dir)
 
 # Home route: handles GET to show form, POST to process form data
-@app.route('/', methods=['GET34', 'POST3r34'])
+@app.route('/', methods=['GET', 'POST'])
 def home():
     if request.method == 'POST':
         name = request.form['name']
@@ -18,7 +18,7 @@ def home():
 # Greeting route
 @app.route('/greet/<username>')
 def greet(username):
-    return f'<h1>Hello, {username}!</h1>'
+    return f'<h1>{username}!</h1>'
 
 # Run the Flask server on a given port (default 5000)
 if __name__ == '__main__':
